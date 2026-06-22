@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ajmera One Kalyan — 1 & 2 BHK Bed Deck Residences starting at ₹42.9 Lakhs. Final tower at Destination One Kalyan, Murbad Road, Shahad, Kalyan. RERA: P51700030210">
+<meta name="keywords" content="ajmera one kalyan, one kalyan, 1 bhk kalyan, 2 bhk kalyan, ajmera shahad, destination one kalyan">
+<title>Ajmera One Kalyan | 1 & 2 BHK Homes | Destination One Kalyan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & BASE ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #ede9e0;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; font-family: 'Inter', sans-serif; }
+img { display: block; max-width: 100%; }
+
+/* ── TOKENS ───────────────────────────────────────────────── */
+:root {
+  --gold:      #C8952A;
+  --gold-dim:  rgba(200,149,42,0.3);
+  --gold-pale: rgba(200,149,42,0.08);
+  --bg:        #0a0a0a;
+  --bg1:       #111111;
+  --bg2:       #181510;
+  --cream:     #ede9e0;
+  --muted:     #9a9282;
+  --faint:     #504a40;
+  --serif:     'Cormorant Garamond', Georgia, serif;
+  --sans:      'Inter', sans-serif;
+  --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── ANNOUNCE BAR ─────────────────────────────────────────── */
+.announce-bar {
+  background: var(--gold);
+  text-align: center;
+  padding: 9px 20px;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #0a0a0a;
+  position: relative;
+  z-index: 200;
+}
+.announce-bar a { color: #0a0a0a; font-weight: 700; }
+
+/* ── NAVBAR ───────────────────────────────────────────────── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,10,10,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+  height: 68px;
+  transition: background var(--transition);
+}
+.navbar.scrolled { background: rgba(10,10,10,1); }
+.logo {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--cream);
+  text-transform: uppercase;
+}
+.logo span { color: var(--gold); }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color var(--transition);
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width var(--transition);
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--gold); }
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
+.nav-cta {
+  background: var(--gold);
+  color: #0a0a0a;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 11px 28px;
+  border-radius: 2px;
+  transition: opacity var(--transition);
+}
+.nav-cta:hover { opacity: 0.88; }
+.nav-phone {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-phone svg { stroke: var(--gold); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 24px; height: 1.5px; background: var(--cream); transition: var(--transition); }
+
+/* ── PAGE SYSTEM ──────────────────────────────────────────── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ── BUTTONS ──────────────────────────────────────────────── */
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: #0a0a0a;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 15px 36px;
+  border-radius: 2px;
+  transition: opacity var(--transition), transform var(--transition);
+  border: none;
+}
+.btn-gold:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--cream);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 2px;
+  border: 1px solid rgba(237,233,224,0.25);
+  transition: border-color var(--transition), color var(--transition);
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold);
+  font-size: 11.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  transition: gap var(--transition);
+}
+.btn-ghost:hover { gap: 14px; }
+.btn-ghost svg { transition: transform var(--transition); }
+.btn-ghost:hover svg { transform: translateX(4px); }
+
+/* ── SECTION SHARED ───────────────────────────────────────── */
+.section { padding: 100px 56px; }
+.section-sm { padding: 60px 56px; }
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 10.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+.display-title {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 300;
+  line-height: 1.08;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+.display-title em { font-style: italic; color: var(--gold); }
+.body-text {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 520px;
+}
+.gold-rule {
+  width: 100%;
+  height: 1px;
+  background: var(--gold-dim);
+  border: none;
+  margin: 0;
+}
+
+/* ── REVEAL ANIMATION ─────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ════════════════════════════════════════════════════════════
+   HOME PAGE
+════════════════════════════════════════════════════════════ */
+
+/* HERO */
+.hero {
+  min-height: 92vh;
+  background: var(--bg2);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 56px 80px 56px;
+  position: relative;
+  z-index: 2;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold-pale);
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin-bottom: 28px;
+  width: fit-content;
+}
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(44px, 6vw, 76px);
+  font-weight: 300;
+  line-height: 1.0;
+  color: var(--cream);
+  margin-bottom: 28px;
+}
+.hero-h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+.hero-meta {
+  display: flex;
+  gap: 32px;
+  padding-top: 40px;
+  border-top: 1px solid var(--gold-dim);
+}
+.hero-meta-item .label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 5px;
+}
+.hero-meta-item .value {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--cream);
+}
+.hero-meta-item .value span { color: var(--gold); font-size: 14px; vertical-align: super; }
+
+.hero-right {
+  position: relative;
+  background: #111;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.arch-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 380px;
+}
+.arch {
+  width: 200px;
+  height: 320px;
+  border: 1.5px solid var(--gold-dim);
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arch:nth-child(1) { width: 200px; height: 320px; }
+.arch:nth-child(2) { width: 160px; height: 260px; border-color: rgba(200,149,42,0.2); }
+.arch:nth-child(3) { width: 120px; height: 200px; border-color: rgba(200,149,42,0.12); background: rgba(200,149,42,0.03); }
+.arch-label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 24px;
+}
+.hero-price-float {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(10,10,10,0.94);
+  border: 1px solid var(--gold-dim);
+  padding: 24px 28px;
+  min-width: 180px;
+}
+.hpf-label { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.hpf-price { font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--cream); line-height: 1; }
+.hpf-desc { font-size: 11px; color: var(--muted); margin-top: 6px; }
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 56px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.scroll-line {
+  width: 40px;
+  height: 1px;
+  background: var(--faint);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gold);
+  animation: slide 2.5s ease infinite;
+}
+@keyframes slide { 0% { left: -100%; } 100% { left: 100%; } }
+
+/* STATS STRIP */
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--bg1);
+  border-top: 1px solid var(--gold-dim);
+  border-bottom: 1px solid var(--gold-dim);
+}
+.stat-block {
+  padding: 36px 56px;
+  border-right: 1px solid var(--gold-dim);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background var(--transition);
+}
+.stat-block:last-child { border-right: none; }
+.stat-block:hover { background: var(--gold-pale); }
+.stat-num {
+  font-family: var(--serif);
+  font-size: 52px;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+.stat-label {
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* USP SECTION */
+.usp-section { background: var(--bg); }
+.usp-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+.usp-header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 20px; }
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+}
+.usp-card {
+  background: var(--bg);
+  padding: 40px 36px;
+  border-top: 2px solid transparent;
+  transition: border-top-color var(--transition), background var(--transition);
+}
+.usp-card:hover { border-top-color: var(--gold); background: var(--bg1); }
+.usp-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.usp-card:hover .usp-icon { border-color: var(--gold); background: var(--gold-pale); }
+.usp-icon svg { stroke: var(--gold); width: 20px; height: 20px; }
+.usp-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+.usp-desc { font-size: 12.5px; color: var(--muted); line-height: 1.75; }
+
+/* SPLIT / LOCATION */
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 540px;
+}
+.split-visual {
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px;
+}
+.map-visual {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #0f0d09;
+}
+.map-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.map-dot::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-dim);
+  animation: ripple 2s ease infinite;
+}
+.map-dot::after {
+  content: '';
+  position: absolute;
+  inset: -18px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,149,42,0.12);
+  animation: ripple 2s ease 0.5s infinite;
+}
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+.map-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.split-content {
+  background: var(--bg1);
+  padding: 80px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.conn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--gold-dim);
+  margin: 36px 0 40px;
+}
+.conn-item {
+  background: var(--bg1);
+  padding: 20px 22px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: background var(--transition);
+}
+.conn-item:hover { background: var(--bg2); }
+.conn-time {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  min-width: 48px;
+}
+.conn-name { font-size: 12.5px; color: var(--cream); font-weight: 500; margin-bottom: 3px; }
+.conn-sub { font-size: 11.5px; color: var(--muted); }
+
+/* AMENITIES TEASER */
+.am-teaser { background: var(--bg2); }
+.am-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 56px;
+}
+.am-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+}
+.am-item {
+  background: var(--bg2);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.am-item:hover { background: var(--bg1); }
+.am-icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition), background var(--transition);
+}
+.am-item:hover .am-icon { border-color: var(--gold); background: var(--gold-pale); }
+.am-icon svg { stroke: var(--muted); width: 20px; height: 20px; transition: stroke var(--transition); }
+.am-item:hover .am-icon svg { stroke: var(--gold); }
+.am-name { font-size: 10.5px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); text-align: center; line-height: 1.4; }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--bg1); }
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+  margin-top: 56px;
+}
+.test-card {
+  background: var(--bg1);
+  padding: 44px 40px;
+  transition: background var(--transition);
+}
+.test-card:hover { background: var(--bg2); }
+.test-quote-mark {
+  font-family: var(--serif);
+  font-size: 72px;
+  line-height: 0.6;
+  color: var(--gold-dim);
+  margin-bottom: 20px;
+  display: block;
+}
+.test-quote {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+.test-divider { width: 32px; height: 1px; background: var(--gold); margin-bottom: 16px; }
+.test-author { font-size: 12px; font-weight: 500; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; }
+.test-role { font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+
+/* FAQ */
+.faq-section { background: var(--bg); }
+.faq-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; }
+.faq-list { }
+.faq-item { border-bottom: 1px solid var(--gold-dim); }
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  cursor: pointer;
+  gap: 20px;
+}
+.faq-q-text { font-size: 14px; color: var(--cream); line-height: 1.5; }
+.faq-toggle {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--transition), border-color var(--transition);
+}
+.faq-item.open .faq-toggle { background: var(--gold); border-color: var(--gold); }
+.faq-toggle svg { stroke: var(--gold); width: 14px; height: 14px; transition: transform var(--transition), stroke 0.2s; }
+.faq-item.open .faq-toggle svg { stroke: #0a0a0a; transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.faq-item.open .faq-answer { max-height: 200px; padding-bottom: 20px; }
+
+/* CONTACT CTA STRIP */
+.cta-strip {
+  background: var(--gold);
+  padding: 60px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.cta-strip-text { }
+.cta-strip-title {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 300;
+  color: #0a0a0a;
+  margin-bottom: 6px;
+}
+.cta-strip-sub { font-size: 13px; color: rgba(10,10,10,0.6); }
+.cta-strip-actions { display: flex; gap: 14px; flex-shrink: 0; }
+.btn-dark {
+  background: #0a0a0a;
+  color: var(--cream);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  border-radius: 2px;
+  border: none;
+  transition: opacity var(--transition);
+}
+.btn-dark:hover { opacity: 0.85; }
+.btn-wa {
+  background: #25D366;
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 15px 28px;
+  border-radius: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity var(--transition);
+}
+.btn-wa:hover { opacity: 0.88; }
+
+/* RERA BAR */
+.rera-bar {
+  background: #080808;
+  border-top: 1px solid rgba(200,149,42,0.12);
+  padding: 16px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.rera-text { font-size: 10.5px; color: var(--faint); letter-spacing: 0.5px; line-height: 1.6; }
+.rera-text strong { color: var(--gold); font-weight: 500; }
+
+/* ════════════════════════════════════════════════════════════
+   AMENITIES PAGE
+════════════════════════════════════════════════════════════ */
+.page-hero {
+  background: var(--bg1);
+  padding: 80px 56px 60px;
+  border-bottom: 1px solid var(--gold-dim);
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background: var(--gold-pale);
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.page-hero-inner { position: relative; z-index: 1; }
+.page-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5.5vw, 64px);
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.05;
+}
+.page-title em { font-style: italic; color: var(--gold); }
+.page-subtitle { font-size: 14px; color: var(--muted); max-width: 480px; margin-top: 16px; line-height: 1.8; }
+
+.am-full-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+  margin-top: 56px;
+}
+.am-full-item {
+  background: var(--bg);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border-top: 2px solid transparent;
+  transition: border-top-color var(--transition), background var(--transition);
+  cursor: pointer;
+}
+.am-full-item:hover { border-top-color: var(--gold); background: var(--bg1); }
+.am-full-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+.am-full-item:hover .am-full-icon { border-color: var(--gold); background: var(--gold-pale); }
+.am-full-icon svg { stroke: var(--muted); width: 20px; height: 20px; transition: stroke var(--transition); }
+.am-full-item:hover .am-full-icon svg { stroke: var(--gold); }
+.am-full-name { font-size: 13px; color: var(--cream); font-weight: 500; }
+.am-full-desc { font-size: 11.5px; color: var(--faint); line-height: 1.6; }
+
+.am-claim {
+  background: var(--gold);
+  padding: 48px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 1px;
+}
+.am-claim-text {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 300;
+  color: #0a0a0a;
+  line-height: 1.4;
+}
+.am-claim-text em { font-style: italic; }
+
+/* ════════════════════════════════════════════════════════════
+   FLOOR PLANS PAGE
+════════════════════════════════════════════════════════════ */
+.fp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+  margin-top: 56px;
+}
+.fp-card {
+  background: var(--bg);
+  padding: 32px;
+  transition: background var(--transition);
+}
+.fp-card:hover { background: var(--bg1); }
+.fp-visual {
+  height: 200px;
+  background: var(--bg1);
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.fp-card:hover .fp-visual { border-color: var(--gold); }
+.fp-visual-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.fp-visual-inner svg { stroke: rgba(200,149,42,0.3); width: 48px; height: 48px; }
+.fp-visual-label { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--faint); }
+.fp-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  font-weight: 600;
+}
+.fp-badge.bhk1 { background: var(--gold); color: #0a0a0a; }
+.fp-badge.bhk2 { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
+.fp-name { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
+.fp-specs { font-size: 12px; color: var(--muted); margin-bottom: 16px; line-height: 1.7; }
+.fp-price { font-family: var(--serif); font-size: 26px; font-weight: 300; color: var(--gold); margin-bottom: 20px; }
+.fp-cta {
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap var(--transition);
+  padding: 0;
+}
+.fp-cta:hover { gap: 14px; }
+.fp-cta svg { stroke: var(--gold); width: 16px; height: 16px; }
+.fp-download {
+  background: var(--bg1);
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  gap: 16px;
+  transition: border-color var(--transition), background var(--transition);
+  cursor: pointer;
+}
+.fp-download:hover { border-color: var(--gold); background: var(--bg2); }
+.fp-download svg { stroke: var(--gold); width: 40px; height: 40px; opacity: 0.6; }
+.fp-download-title { font-family: var(--serif); font-size: 20px; color: var(--cream); }
+.fp-download-sub { font-size: 12px; color: var(--muted); }
+
+/* ════════════════════════════════════════════════════════════
+   GALLERY PAGE
+════════════════════════════════════════════════════════════ */
+.gallery-filters {
+  display: flex;
+  gap: 8px;
+  padding: 32px 56px;
+  border-bottom: 1px solid var(--gold-dim);
+  background: var(--bg1);
+  flex-wrap: wrap;
+}
+.filter-btn {
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 1px solid var(--gold-dim);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 2px;
+  transition: all var(--transition);
+}
+.filter-btn.active, .filter-btn:hover { background: var(--gold); border-color: var(--gold); color: #0a0a0a; }
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: #0a0a0a;
+  padding: 2px;
+  margin: 40px 56px;
+}
+.gal-item {
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+}
+.gal-item:first-child { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; min-height: 360px; }
+.gal-item:nth-child(4) { grid-column: span 2; }
+.gal-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.gal-placeholder svg { stroke: rgba(200,149,42,0.2); width: 36px; height: 36px; }
+.gal-placeholder span { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--faint); }
+.gal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,10,0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+.gal-item:hover .gal-overlay { opacity: 1; }
+.gal-overlay-label { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); }
+.gal-overlay svg { stroke: var(--gold); width: 24px; height: 24px; }
+
+/* ════════════════════════════════════════════════════════════
+   ABOUT PAGE
+════════════════════════════════════════════════════════════ */
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+.about-left {
+  background: var(--bg2);
+  padding: 80px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-right {
+  background: var(--bg1);
+  padding: 80px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-quote {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.5;
+  border-left: 2px solid var(--gold);
+  padding-left: 28px;
+  margin-bottom: 32px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--gold-dim);
+  margin-top: 56px;
+}
+.trust-item {
+  background: var(--bg1);
+  padding: 28px 24px;
+  text-align: center;
+  transition: background var(--transition);
+}
+.trust-item:hover { background: var(--bg2); }
+.trust-num { font-family: var(--serif); font-size: 40px; font-weight: 300; color: var(--gold); }
+.trust-label { font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+
+/* TIMELINE */
+.timeline-section { background: var(--bg); }
+.timeline { margin-top: 48px; max-width: 700px; }
+.tl-item {
+  display: flex;
+  gap: 28px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  bottom: 0;
+  width: 1px;
+  background: var(--gold-dim);
+}
+.tl-item:last-child::before { display: none; }
+.tl-dot {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+  transition: all var(--transition);
+}
+.tl-item.current .tl-dot { border-color: var(--gold); background: var(--gold); }
+.tl-dot svg { stroke: var(--faint); width: 16px; height: 16px; }
+.tl-item.current .tl-dot svg { stroke: #0a0a0a; }
+.tl-content { padding-top: 8px; }
+.tl-phase { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.tl-title { font-family: var(--serif); font-size: 20px; color: var(--cream); margin-bottom: 8px; }
+.tl-desc { font-size: 13px; color: var(--muted); line-height: 1.75; }
+
+/* ════════════════════════════════════════════════════════════
+   CONTACT PAGE
+════════════════════════════════════════════════════════════ */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--faint); }
+.form-input,
+.form-textarea {
+  background: var(--bg1);
+  border: 1px solid rgba(200,149,42,0.18);
+  border-radius: 2px;
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 13.5px;
+  padding: 14px 18px;
+  outline: none;
+  transition: border-color var(--transition);
+  width: 100%;
+}
+.form-input::placeholder, .form-textarea::placeholder { color: var(--faint); }
+.form-input:focus, .form-textarea:focus { border-color: var(--gold); }
+.form-textarea { height: 120px; resize: none; }
+.form-disclaimer {
+  font-size: 11px;
+  color: var(--faint);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+.contact-info-panel { }
+.contact-info-title { font-family: var(--serif); font-size: 22px; color: var(--cream); margin-bottom: 32px; }
+.ci-list { display: flex; flex-direction: column; gap: 28px; margin-bottom: 40px; }
+.ci-item { display: flex; gap: 18px; align-items: flex-start; }
+.ci-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ci-icon svg { stroke: var(--gold); width: 18px; height: 18px; }
+.ci-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
+.ci-val { font-size: 13.5px; color: var(--cream); line-height: 1.6; }
+.map-embed {
+  background: var(--bg1);
+  border: 1px solid var(--gold-dim);
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.map-embed:hover { border-color: var(--gold); }
+.map-embed svg { stroke: var(--gold); width: 28px; height: 28px; opacity: 0.6; }
+.map-embed-label { font-size: 11px; color: var(--muted); letter-spacing: 1px; }
+.map-embed-coords { font-size: 10.5px; color: var(--gold); font-family: var(--mono, monospace); }
+
+/* ════════════════════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════════════════════ */
+.footer {
+  background: #060606;
+  border-top: 1px solid var(--gold-dim);
+  padding: 72px 56px 36px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+.footer-logo { font-family: var(--serif); font-size: 24px; font-weight: 600; letter-spacing: 3px; color: var(--cream); margin-bottom: 14px; }
+.footer-logo span { color: var(--gold); }
+.footer-tagline { font-size: 12.5px; color: var(--faint); line-height: 1.75; max-width: 240px; margin-bottom: 24px; }
+.footer-social { display: flex; gap: 10px; }
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+.social-btn:hover { border-color: var(--gold); background: var(--gold-pale); }
+.social-btn svg { stroke: var(--muted); width: 16px; height: 16px; transition: stroke var(--transition); }
+.social-btn:hover svg { stroke: var(--gold); }
+.footer-col h4 { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+.footer-col a {
+  display: block;
+  font-size: 12.5px;
+  color: var(--faint);
+  margin-bottom: 10px;
+  transition: color var(--transition);
+  cursor: pointer;
+}
+.footer-col a:hover { color: var(--cream); }
+.footer-bottom {
+  border-top: 1px solid rgba(200,149,42,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-rera { font-size: 10.5px; color: var(--faint); line-height: 1.7; }
+.footer-rera strong { color: var(--gold); font-weight: 500; }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 11px; color: var(--faint); cursor: pointer; transition: color var(--transition); }
+.footer-legal a:hover { color: var(--cream); }
+
+/* ── FLOATING WHATSAPP ────────────────────────────────────── */
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 300;
+  width: 52px;
+  height: 52px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
+.wa-float svg { stroke: #fff; width: 26px; height: 26px; fill: none; }
+.wa-tooltip {
+  position: absolute;
+  right: 60px;
+  white-space: nowrap;
+  background: #0a0a0a;
+  border: 1px solid var(--gold-dim);
+  color: var(--cream);
+  font-size: 11px;
+  padding: 7px 14px;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition);
+}
+.wa-float:hover .wa-tooltip { opacity: 1; }
+
+/* ── MOBILE NAV ───────────────────────────────────────────── */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10,10,10,0.97);
+  z-index: 150;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 2px;
+  transition: color var(--transition);
+}
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-close {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .navbar { padding: 0 24px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-phone { display: none; }
+  .hamburger { display: flex; }
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-right { display: none; }
+  .hero-left { padding: 60px 24px; }
+  .hero-h1 { font-size: 44px; }
+  .hero-scroll-hint { display: none; }
+  .stats-strip { grid-template-columns: 1fr; }
+  .stat-block { border-right: none; border-bottom: 1px solid var(--gold-dim); }
+  .section { padding: 60px 24px; }
+  .section-sm { padding: 40px 24px; }
+  .usp-header { grid-template-columns: 1fr; }
+  .usp-grid { grid-template-columns: 1fr; }
+  .split-section { grid-template-columns: 1fr; }
+  .split-visual { display: none; }
+  .split-content { padding: 60px 24px; }
+  .conn-grid { grid-template-columns: 1fr; }
+  .am-grid { grid-template-columns: repeat(3, 1fr); }
+  .am-full-grid { grid-template-columns: repeat(2, 1fr); }
+  .test-grid { grid-template-columns: 1fr; }
+  .faq-layout { grid-template-columns: 1fr; }
+  .cta-strip { flex-direction: column; align-items: flex-start; padding: 48px 24px; }
+  .cta-strip-actions { flex-direction: column; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer { padding: 48px 24px 28px; }
+  .rera-bar { padding: 14px 24px; flex-direction: column; align-items: flex-start; }
+  .page-hero { padding: 60px 24px 40px; }
+  .fp-grid { grid-template-columns: 1fr; }
+  .gal-grid { margin: 24px 24px; grid-template-columns: 1fr 1fr; }
+  .gal-item:first-child { grid-column: span 2; }
+  .about-split { grid-template-columns: 1fr; }
+  .about-left { padding: 60px 24px; }
+  .about-right { padding: 60px 24px; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-layout { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 16px; }
+  .hero-price-float { right: 20px; bottom: 20px; }
+  .am-claim { flex-direction: column; padding: 40px 24px; }
+}
+@media (max-width: 600px) {
+  .am-grid { grid-template-columns: repeat(2, 1fr); }
+  .am-full-grid { grid-template-columns: 1fr 1fr; }
+  .gal-grid { grid-template-columns: 1fr; }
+  .gal-item:first-child { grid-column: span 1; }
+  .footer-top { grid-template-columns: 1fr; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── SCROLL TO TOP ─────────────────────────────────────────── */
+.scroll-top {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  background: var(--bg1);
+  border: 1px solid var(--gold-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 299;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition);
+}
+.scroll-top.visible { opacity: 1; pointer-events: all; }
+.scroll-top:hover { background: var(--gold-pale); border-color: var(--gold); }
+.scroll-top svg { stroke: var(--gold); width: 18px; height: 18px; }
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/918446634066/?text=Hello! I am interested in Ajmera One Kalyan. Please share details." target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="wa-tooltip">Chat on WhatsApp</div>
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none"><polyline points="18 15 12 9 6 15" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">✕</button>
+  <a href="#" onclick="navigate('home');closeMobileMenu()">Home</a>
+  <a href="#" onclick="navigate('amenities');closeMobileMenu()">Amenities</a>
+  <a href="#" onclick="navigate('floorplans');closeMobileMenu()">Floor Plans</a>
+  <a href="#" onclick="navigate('gallery');closeMobileMenu()">Gallery</a>
+  <a href="#" onclick="navigate('about');closeMobileMenu()">About</a>
+  <a href="#" onclick="navigate('contact');closeMobileMenu()">Contact</a>
+</div>
+
+<!-- ANNOUNCE BAR -->
+<div class="announce-bar">
+  Final Tower Now Launching — Prior Appointment Compulsory &nbsp;|&nbsp;
+  <a href="tel:918446634066">Call +91 8446634066</a> &nbsp;|&nbsp;
+  <a href="https://wa.me/918446634066" target="_blank">WhatsApp Us</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="logo">ONE<span>KALYAN</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="navigate('home')" data-page="home" class="active">Home</a></li>
+    <li><a href="#" onclick="navigate('amenities')" data-page="amenities">Amenities</a></li>
+    <li><a href="#" onclick="navigate('floorplans')" data-page="floorplans">Floor Plans</a></li>
+    <li><a href="#" onclick="navigate('gallery')" data-page="gallery">Gallery</a></li>
+    <li><a href="#" onclick="navigate('about')" data-page="about">About</a></li>
+    <li><a href="#" onclick="navigate('contact')" data-page="contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:20px">
+    <div class="nav-phone">
+      <svg viewBox="0 0 24 24" fill="none" width="14" height="14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.46 17l.46-.08z"/></svg>
+      +91 8446634066
+    </div>
+    <button class="nav-cta" onclick="navigate('contact')">Enquire Now</button>
+    <div class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span>#TheFinalTower — Kalyan, Maharashtra</span>
+      </div>
+      <h1 class="hero-h1 reveal">Where luxury<br>meets <em>Kalyan's</em><br>skyline</h1>
+      <p class="hero-sub reveal reveal-delay-1">1 & 2 Bed Deck Residences at Murbad Road, Shahad. The most awaited tower at Destination One Kalyan is now open for booking.</p>
+      <div class="hero-actions reveal reveal-delay-2">
+        <button class="btn-gold" onclick="navigate('contact')">Schedule Site Visit</button>
+        <button class="btn-outline" onclick="navigate('floorplans')">View Floor Plans</button>
+      </div>
+      <div class="hero-meta reveal reveal-delay-3">
+        <div class="hero-meta-item">
+          <div class="label">Starting from</div>
+          <div class="value">₹42.9<span>L</span></div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="label">Configuration</div>
+          <div class="value">1 & 2 BHK</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="label">Carpet area</div>
+          <div class="value">458–657 sqft</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="arch-container">
+          <div class="arch"></div>
+          <div class="arch"></div>
+          <div class="arch">
+            <span class="arch-label">Destination One Kalyan</span>
+          </div>
+        </div>
+        <div class="hero-price-float">
+          <div class="hpf-label">Starting from</div>
+          <div class="hpf-price">₹42.9 Lakhs</div>
+          <div class="hpf-desc">1 BHK · 458–657 sq ft · 22 Floors</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats-strip">
+    <div class="stat-block reveal">
+      <span class="stat-num" data-count="7500">0</span>
+      <div class="stat-label">Customer Interactions</div>
+    </div>
+    <div class="stat-block reveal reveal-delay-1">
+      <span class="stat-num" data-count="380">0</span>
+      <div class="stat-label">Proud Home Owners</div>
+    </div>
+    <div class="stat-block reveal reveal-delay-2">
+      <span class="stat-num" data-count="3">0</span>
+      <div class="stat-label">Towers Sold Out</div>
+    </div>
+  </div>
+
+  <!-- USP -->
+  <section class="section usp-section">
+    <div class="usp-header">
+      <div>
+        <div class="eyebrow">#TheFinalTower</div>
+        <h2 class="display-title reveal">A development for which<br>success is <em>no accident</em></h2>
+      </div>
+      <div class="usp-header-right">
+        <p class="body-text reveal">Destination One Kalyan is not just redefining the lifestyle of Kalyan — it is redefining the entire Mumbai Metropolitan Region. The final tower is the most premium of all, offering choicest inventory and expansive views.</p>
+        <button class="btn-ghost reveal" onclick="navigate('about')">
+          Our story
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor"/><polyline points="12 5 19 12 12 19" stroke="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="usp-grid">
+      <div class="usp-card reveal">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div class="usp-title">Best-in-Class Development</div>
+        <div class="usp-desc">A sprawling mixed-use landmark — residential homes, international shopping, and premium workspaces all at one prestigious address.</div>
+      </div>
+      <div class="usp-card reveal reveal-delay-1">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="usp-title">50+ World-Class Amenities</div>
+        <div class="usp-desc">Open-to-sky podium with infinity pool, golf putting greens, spa, open-air gym, digital gaming zone, and reflexology pathway.</div>
+      </div>
+      <div class="usp-card reveal reveal-delay-2">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 17l2-4h14l2 4"/><rect x="7" y="13" width="10" height="4"/><path d="M7 13V7a5 5 0 0 1 10 0v6"/></svg></div>
+        <div class="usp-title">Seamless Connectivity</div>
+        <div class="usp-desc">10 minutes to Shahad Railway Station. 30 minutes to Navi Mumbai International Airport. Metro Line 5 & 12 access.</div>
+      </div>
+      <div class="usp-card reveal">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="usp-title">XL Deck Homes</div>
+        <div class="usp-desc">1 & 2 BHK Bed Deck Residences with thoughtful attention to detail in every aspect — carpet areas from 458 to 657 sq ft.</div>
+      </div>
+      <div class="usp-card reveal reveal-delay-1">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div class="usp-title">International Club & Spa</div>
+        <div class="usp-desc">Exquisite hospitality within your own building — the most premium unwinding experience Kalyan has ever seen.</div>
+      </div>
+      <div class="usp-card reveal reveal-delay-2">
+        <div class="usp-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="usp-title">RERA Registered</div>
+        <div class="usp-desc">Fully compliant with MahaRERA. Registration No. P51700030210. Three towers delivered on time and promise.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-rule">
+
+  <!-- Location -->
+  <div class="split-section">
+    <div class="split-visual">
+      <div class="map-visual">
+        <div class="map-dot"></div>
+        <div class="map-label">Murbad Road, Shahad, Kalyan</div>
+      </div>
+    </div>
+    <div class="split-content">
+      <div class="eyebrow">Location</div>
+      <h2 class="display-title reveal">High on connectivity.<br><em>High on life.</em></h2>
+      <p class="body-text reveal reveal-delay-1">Murbad Road, Shahad — where fast-growing infrastructure meets a mature social ecosystem of schools, hospitals, malls and parks. The next epicenter of growth in MMR.</p>
+      <div class="conn-grid">
+        <div class="conn-item reveal">
+          <div class="conn-time">10'</div>
+          <div><div class="conn-name">Shahad Railway Station</div><div class="conn-sub">Central Line — direct to Mumbai</div></div>
+        </div>
+        <div class="conn-item reveal reveal-delay-1">
+          <div class="conn-time">30'</div>
+          <div><div class="conn-name">Navi Mumbai Airport</div><div class="conn-sub">Upcoming international hub</div></div>
+        </div>
+        <div class="conn-item reveal">
+          <div class="conn-time">M5</div>
+          <div><div class="conn-name">Kalyan Metro Line 5</div><div class="conn-sub">Rapid transit connectivity</div></div>
+        </div>
+        <div class="conn-item reveal reveal-delay-1">
+          <div class="conn-time">M12</div>
+          <div><div class="conn-name">Metro Line 12 — Taloja</div><div class="conn-sub">Kalyan–Dombivli–Taloja corridor</div></div>
+        </div>
+      </div>
+      <button class="btn-gold" onclick="navigate('contact')">Get Driving Directions</button>
+    </div>
+  </div>
+
+  <hr class="gold-rule">
+
+  <!-- Amenities teaser -->
+  <section class="section am-teaser">
+    <div class="am-header">
+      <div>
+        <div class="eyebrow">50+ Facilities</div>
+        <h2 class="display-title reveal">First of its kind<br><em>in Kalyan</em></h2>
+      </div>
+      <div>
+        <p class="body-text reveal">Over 50 world-class facilities arranged across an open-to-sky podium — giving every member of the family something exceptional to call their own.</p>
+        <button class="btn-ghost" style="margin-top:20px" onclick="navigate('amenities')">
+          View all amenities
+          <svg viewBox="0 0 24 24" fill="none" width="16" height="16" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor"/><polyline points="12 5 19 12 12 19" stroke="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="am-grid">
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="5" r="3"/><path d="M12 8v8m-4-4l-2 6m10-6l2 6"/></svg></div><div class="am-name">Jogging Park</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><div class="am-name">Badminton Court</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="am-name">Aroma Garden</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><path d="M8 12h8M12 8v8"/></svg></div><div class="am-name">Open-Air Gym</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6l1.5 4.5L18 12l-4.5 1.5L12 18l-1.5-4.5L6 12l4.5-1.5z"/></svg></div><div class="am-name">Golf Putting Greens</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="am-name">Infinity Pool</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div class="am-name">Kids Play Area</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="am-name">Digital Gaming Zone</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="am-name">Library</div></div>
+      <div class="am-item"><div class="am-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div><div class="am-name">Mini Theatre</div></div>
+    </div>
+  </section>
+
+  <hr class="gold-rule">
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="eyebrow">Homeowner Voices</div>
+    <h2 class="display-title reveal">Voices of our <em>homeowners</em></h2>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <span class="test-quote-mark">"</span>
+        <p class="test-quote">The moment I walked into the sample flat, I knew this was the home I had been waiting for. The quality and thoughtfulness of design at One Kalyan is unlike anything in Kalyan at this price point.</p>
+        <div class="test-divider"></div>
+        <div class="test-author">Rajesh M.</div>
+        <div class="test-role">Tower 2, 2 BHK Owner · Kalyan</div>
+      </div>
+      <div class="test-card reveal reveal-delay-1">
+        <span class="test-quote-mark">"</span>
+        <p class="test-quote">Being close to Shahad station was my primary requirement. One Kalyan ticked every box — connectivity, world-class amenities, and a developer with a proven track record. Three towers sold is proof enough.</p>
+        <div class="test-divider"></div>
+        <div class="test-author">Priya S.</div>
+        <div class="test-role">Tower 1, 1 BHK Owner · Dombivli</div>
+      </div>
+      <div class="test-card reveal">
+        <span class="test-quote-mark">"</span>
+        <p class="test-quote">As an NRI investor, I was looking for a project with real credibility. The Ajmera brand, the location near the upcoming airport, and the 380+ homeowners gave me all the confidence I needed to invest.</p>
+        <div class="test-divider"></div>
+        <div class="test-author">Suresh N.</div>
+        <div class="test-role">NRI Investor · Dubai</div>
+      </div>
+      <div class="test-card reveal reveal-delay-1">
+        <span class="test-quote-mark">"</span>
+        <p class="test-quote">The amenities at One Kalyan are on another level for Kalyan. An infinity pool, golf putting greens, digital gaming zone — my kids absolutely love it here. Best decision we ever made.</p>
+        <div class="test-divider"></div>
+        <div class="test-author">Anita K.</div>
+        <div class="test-role">Tower 3, 2 BHK Owner · Thane</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="faq-layout">
+      <div>
+        <div class="eyebrow">Common Questions</div>
+        <h2 class="display-title reveal">Frequently<br>asked <em>questions</em></h2>
+        <p class="body-text reveal reveal-delay-1" style="margin-top:20px">Have more questions? Our team is available 7 days a week. Call, WhatsApp, or visit our sales office at Murbad Road, Kalyan.</p>
+        <button class="btn-gold" style="margin-top:32px" onclick="navigate('contact')">Contact Sales Team</button>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">What is the address of Ajmera One Kalyan?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">One Kalyan, Murbad Road, Shahad, Kalyan, Ulhasnagar, Maharashtra 421001. The site office is located on Murbad Road — prior appointment is compulsory for a site visit.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">What is the carpet area and pricing?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">1 BHK homes start from ₹42.9 Lakhs with carpet areas between 458–550 sq ft. 2 BHK homes start from ₹68.9 Lakhs with carpet areas between 550–657 sq ft. All across 22 storeys with expansive views.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">How many towers are there and what is the status?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Destination One Kalyan has 4 towers in total. Towers 1, 2 and 3 are completely sold out. The final tower — our most premium offering — is now open for booking. This is the last opportunity to own a home at this landmark development.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">What is the nearest railway station?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Shahad Railway Station on the Central Line is approximately 10 minutes from the project. Metro Line 5 and the upcoming Kalyan–Dombivli–Taloja Metro Line 12 will further enhance connectivity.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">What amenities are available?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Over 50 amenities including infinity swimming pool, spa, jacuzzi, international club, open-air gym, golf putting greens, jogging park, digital gaming zone, mini theatre, library, senior citizen zone, kids play area, badminton court, 24x7 security and much more.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span class="faq-q-text">Is the project RERA registered?</span>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer">Yes. MahaRERA Registration No. P51700030210. You can verify project details on the official MahaRERA website. This website is operated by ASB Group, the authorized marketing partner (MahaRERA No. A51700021052).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <div class="cta-strip">
+    <div class="cta-strip-text">
+      <div class="cta-strip-title">Ready to find your home?</div>
+      <div class="cta-strip-sub">Our team is available 7 days a week · Prior appointment required for site visit</div>
+    </div>
+    <div class="cta-strip-actions">
+      <a href="tel:918446634066" class="btn-dark">Call +91 8446634066</a>
+      <a href="https://wa.me/918446634066/?text=Hello! I'm interested in Ajmera One Kalyan. Please share details." target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#fff" stroke-width="1.8"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="rera-bar">
+    <span class="rera-text">RERA Reg. No.: <strong>P51700030210</strong> &nbsp;|&nbsp; MahaRERA Partner No.: <strong>A51700021052</strong> &nbsp;|&nbsp; Website operated by ASB Group — authorized marketing partner. Not the official developer website.</span>
+    <span class="rera-text">Images for representation only. Prices subject to change without notice. Properties subject to availability.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     AMENITIES PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-amenities">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Lifestyle</div>
+      <h1 class="page-title reveal">World-class<br><em>amenities</em></h1>
+      <p class="page-subtitle reveal reveal-delay-1">Over 50 facilities across an open-to-sky podium. First of its kind in Kalyan — redefining what residential living feels like.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="eyebrow">50+ Facilities — Open to Sky Podium</div>
+    <h2 class="display-title reveal">Curated for every<br><em>member of the family</em></h2>
+    <div class="am-full-grid">
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="5" r="3"/><path d="M12 8v8m-4-4l-2 6m10-6l2 6"/></svg></div><div class="am-full-name">Jogging Park</div><div class="am-full-desc">Tree-lined running track across the podium</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><div class="am-full-name">Badminton Court</div><div class="am-full-desc">Full-sized professional court</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="am-full-name">Aroma Garden</div><div class="am-full-desc">Fragrant botanical planting zones</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><path d="M8 12h8M12 8v8"/></svg></div><div class="am-full-name">Open-Air Gym</div><div class="am-full-desc">Equipment and free space under the sky</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6l1.5 4.5L18 12l-4.5 1.5L12 18l-1.5-4.5L6 12l4.5-1.5z"/></svg></div><div class="am-full-name">Golf Putting Greens</div><div class="am-full-desc">Manicured greens for enthusiasts</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><div class="am-full-name">Infinity Pool</div><div class="am-full-desc">Premium infinity-edge swimming pool</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg></div><div class="am-full-name">Sandbox</div><div class="am-full-desc">Safe creative play zone for young children</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><div class="am-full-name">Kids Play Area</div><div class="am-full-desc">Dedicated safe play space for children</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="am-full-name">Cove Seating</div><div class="am-full-desc">Sheltered outdoor socialising nooks</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg></div><div class="am-full-name">Senior Citizen Zone</div><div class="am-full-desc">Peaceful dedicated area for elders</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2a10 10 0 1 1 0 20A10 10 0 0 1 12 2z"/><path d="M12 6v6l4 2"/></svg></div><div class="am-full-name">Spa & Jacuzzi</div><div class="am-full-desc">International-grade spa experience</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div><div class="am-full-name">Football</div><div class="am-full-desc">Practice zone for football enthusiasts</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div class="am-full-name">Board Games</div><div class="am-full-desc">Community game room for all ages</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></div><div class="am-full-name">Mini Theatre</div><div class="am-full-desc">Private screening room for residents</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="am-full-name">Digital Gaming Zone</div><div class="am-full-desc">State-of-the-art digital entertainment</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div class="am-full-name">Solar Panels</div><div class="am-full-desc">Sustainable energy for common areas</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="am-full-name">24×7 Security</div><div class="am-full-desc">Round-the-clock guards and CCTV</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="am-full-name">Library</div><div class="am-full-desc">Quiet reading and study lounge</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><div class="am-full-name">Carrom</div><div class="am-full-desc">Traditional indoor game area</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div class="am-full-name">First Aid Centre</div><div class="am-full-desc">On-site medical emergency station</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div class="am-full-name">Grand Entrance Lobby</div><div class="am-full-desc">Luxury double-height arrival experience</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="am-full-name">Reflexology Path</div><div class="am-full-desc">Therapeutic stone walkway for wellness</div></div>
+      <div class="am-full-item reveal"><div class="am-full-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><div class="am-full-name">Party Gardens</div><div class="am-full-desc">Landscaped event and celebration spaces</div></div>
+    </div>
+  </section>
+  <div class="am-claim">
+    <div class="am-claim-text">The <em>first property in Kalyan</em> to offer over 50 world-class luxury amenities on an open-to-sky podium.</div>
+    <button class="btn-dark" onclick="navigate('contact')">Schedule a Visit</button>
+  </div>
+  <div class="rera-bar">
+    <span class="rera-text">RERA: <strong>P51700030210</strong> &nbsp;|&nbsp; MahaRERA: <strong>A51700021052</strong> &nbsp;|&nbsp; Images for representation only.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     FLOOR PLANS PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-floorplans">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Configurations</div>
+      <h1 class="page-title reveal">Floor <em>plans</em></h1>
+      <p class="page-subtitle reveal reveal-delay-1">1 BHK & 2 BHK Bed Deck Residences — carpet areas from 458 sq ft to 657 sq ft across 22 storeys with expansive views.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="eyebrow">1 BHK & 2 BHK</div>
+    <h2 class="display-title reveal">Homes designed for<br><em>every aspiration</em></h2>
+    <div class="fp-grid">
+      <div class="fp-card reveal">
+        <div class="fp-visual">
+          <div class="fp-visual-inner"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><rect x="3" y="3" width="11" height="11"/><rect x="3" y="14" width="11" height="7"/><rect x="14" y="3" width="7" height="18"/></svg><span class="fp-visual-label">Floor Plan — Type A</span></div>
+          <span class="fp-badge bhk1">1 BHK</span>
+        </div>
+        <div class="fp-name">Type A — Classic</div>
+        <div class="fp-specs">Carpet area: 458 sq ft &nbsp;·&nbsp; 22 floors<br>1 Bedroom · 1 Bath · Deck</div>
+        <div class="fp-price">From ₹42.9 Lakhs</div>
+        <button class="fp-cta" onclick="navigate('contact')">Request details <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div class="fp-card reveal reveal-delay-1">
+        <div class="fp-visual">
+          <div class="fp-visual-inner"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><rect x="3" y="3" width="12" height="10"/><rect x="3" y="13" width="12" height="8"/><rect x="15" y="3" width="6" height="18"/></svg><span class="fp-visual-label">Floor Plan — Type B</span></div>
+          <span class="fp-badge bhk1">1 BHK</span>
+        </div>
+        <div class="fp-name">Type B — Premium</div>
+        <div class="fp-specs">Carpet area: 490 sq ft &nbsp;·&nbsp; 22 floors<br>1 Bedroom · 1 Bath · Larger Deck</div>
+        <div class="fp-price">On Request</div>
+        <button class="fp-cta" onclick="navigate('contact')">Request details <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div class="fp-card reveal reveal-delay-2">
+        <div class="fp-visual">
+          <div class="fp-visual-inner"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><rect x="3" y="3" width="10" height="9"/><rect x="13" y="3" width="8" height="9"/><rect x="3" y="12" width="18" height="9"/></svg><span class="fp-visual-label">Floor Plan — Type C</span></div>
+          <span class="fp-badge bhk2">2 BHK</span>
+        </div>
+        <div class="fp-name">Type C — Spacious</div>
+        <div class="fp-specs">Carpet area: 580 sq ft &nbsp;·&nbsp; 22 floors<br>2 Bedroom · 2 Bath · Deck</div>
+        <div class="fp-price">From ₹68.9 Lakhs</div>
+        <button class="fp-cta" onclick="navigate('contact')">Request details <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div class="fp-card reveal">
+        <div class="fp-visual">
+          <div class="fp-visual-inner"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><rect x="3" y="3" width="9" height="10"/><rect x="12" y="3" width="9" height="10"/><rect x="3" y="13" width="18" height="8"/></svg><span class="fp-visual-label">Floor Plan — Type D</span></div>
+          <span class="fp-badge bhk2">2 BHK</span>
+        </div>
+        <div class="fp-name">Type D — Deck View</div>
+        <div class="fp-specs">Carpet area: 620 sq ft &nbsp;·&nbsp; Upper floors<br>2 Bedroom · 2 Bath · Panoramic Deck</div>
+        <div class="fp-price">On Request</div>
+        <button class="fp-cta" onclick="navigate('contact')">Request details <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div class="fp-card reveal reveal-delay-1">
+        <div class="fp-visual">
+          <div class="fp-visual-inner"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18"/><rect x="3" y="3" width="10" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="11" width="8" height="10"/><rect x="11" y="11" width="10" height="10"/></svg><span class="fp-visual-label">Floor Plan — Type E</span></div>
+          <span class="fp-badge bhk2">2 BHK</span>
+        </div>
+        <div class="fp-name">Type E — Signature</div>
+        <div class="fp-specs">Carpet area: 657 sq ft &nbsp;·&nbsp; Upper floors<br>2 Bedroom · 2 Bath · Premium Deck</div>
+        <div class="fp-price">On Request</div>
+        <button class="fp-cta" onclick="navigate('contact')">Request details <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div class="fp-download reveal reveal-delay-2" onclick="navigate('contact')">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <div class="fp-download-title">Download full brochure</div>
+        <div class="fp-download-sub">Complete floor plans with room dimensions, vastu notes, and pricing</div>
+        <button class="btn-gold">Get Brochure</button>
+      </div>
+    </div>
+  </section>
+  <div class="cta-strip">
+    <div class="cta-strip-text">
+      <div class="cta-strip-title">Need a payment plan?</div>
+      <div class="cta-strip-sub">Flexible payment options available — speak to our sales team today</div>
+    </div>
+    <div class="cta-strip-actions">
+      <a href="tel:918446634066" class="btn-dark">Call Now</a>
+      <a href="https://wa.me/918446634066/?text=I need the payment plan for Ajmera One Kalyan" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#fff" stroke-width="1.8"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="rera-bar">
+    <span class="rera-text">RERA: <strong>P51700030210</strong> &nbsp;|&nbsp; Carpet areas are approximate. Floor plan images are for illustration only. Actual sizes subject to confirmation from developer.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     GALLERY PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-gallery">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Visual Tour</div>
+      <h1 class="page-title reveal">Project <em>gallery</em></h1>
+      <p class="page-subtitle reveal reveal-delay-1">See the life that awaits you at Destination One Kalyan. Architectural renders, amenity spaces, and sample flat visuals.</p>
+    </div>
+  </div>
+  <div class="gallery-filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Exterior</button>
+    <button class="filter-btn">Amenities</button>
+    <button class="filter-btn">Sample Flat</button>
+    <button class="filter-btn">Location</button>
+  </div>
+  <div class="gal-grid">
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg><span>Tower Exterior</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Tower Exterior</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Infinity Pool</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Infinity Pool</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Grand Lobby</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Grand Lobby</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg><span>Sample Flat — Living Room</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Sample Flat — Living Room</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Aroma Garden</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Aroma Garden</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg><span>Mini Theatre</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Mini Theatre</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><path d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg><span>Open-Air Gym</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Open-Air Gym</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+    <div class="gal-item">
+      <div class="gal-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg><span>Aerial View</span></div>
+      <div class="gal-overlay"><div class="gal-overlay-label">Aerial View</div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" width="24" height="24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+    </div>
+  </div>
+  <div class="cta-strip">
+    <div class="cta-strip-text">
+      <div class="cta-strip-title">Visit the sample flat</div>
+      <div class="cta-strip-sub">Experience the quality first-hand — prior appointment compulsory</div>
+    </div>
+    <div class="cta-strip-actions">
+      <button class="btn-dark" onclick="navigate('contact')">Book Site Visit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Our Story</div>
+      <h1 class="page-title reveal">About <em>One Kalyan</em></h1>
+      <p class="page-subtitle reveal reveal-delay-1">A world-class project conceived by industry veterans — built on trust, delivered on promise.</p>
+    </div>
+  </div>
+  <div class="about-split">
+    <div class="about-left">
+      <div class="eyebrow">Developer</div>
+      <h2 class="display-title reveal">A world-class project by<br><em>industry veterans</em></h2>
+      <p class="body-text reveal reveal-delay-1" style="margin-bottom:28px">It happens quite rarely that two of the biggest real estate names come together to develop one project. Ajmera Group brings decades of trust and excellence to Destination One Kalyan — a unique confluence of credibility that has resulted in a landmark redefining the entire MMR region.</p>
+      <button class="btn-gold reveal reveal-delay-2" onclick="navigate('contact')">Speak to Our Team</button>
+    </div>
+    <div class="about-right">
+      <div class="about-quote reveal">"A landmark that is not just redefining the lifestyle of Kalyan, but the entire Mumbai Metropolitan Region."</div>
+      <p class="body-text reveal reveal-delay-1">Destination One Kalyan is a multi-faceted development that elevates not just the soul, but society as a whole. From luxurious homes to an international shopping experience and workspaces that rival the most premium commercial complexes — this is an address that makes you wonder whether you're dreaming or awake.</p>
+    </div>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item reveal"><div class="trust-num">20+</div><div class="trust-label">Years of Excellence</div></div>
+    <div class="trust-item reveal reveal-delay-1"><div class="trust-num">3</div><div class="trust-label">Towers Delivered</div></div>
+    <div class="trust-item reveal reveal-delay-2"><div class="trust-num">380+</div><div class="trust-label">Happy Homeowners</div></div>
+    <div class="trust-item reveal reveal-delay-3"><div class="trust-num">4</div><div class="trust-label">Total Towers</div></div>
+  </div>
+  <section class="section timeline-section">
+    <div class="eyebrow">Project Journey</div>
+    <h2 class="display-title reveal">Building trust,<br><em>tower by tower</em></h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="tl-content"><div class="tl-phase">Phase 1 — Tower 1</div><div class="tl-title">The first chapter — fully sold out</div><div class="tl-desc">Tower 1 launched and completely sold out. The first proof of concept for premium living in Kalyan at accessible price points. 7,500+ customer interactions from across MMR.</div></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="tl-content"><div class="tl-phase">Phase 2 — Tower 2</div><div class="tl-title">380+ homeowners — a community born</div><div class="tl-desc">Tower 2 delivered to 380+ homeowners. The International Club & Spa facilities inaugurated. The open-to-sky podium with 50+ amenities became the benchmark for the region.</div></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="tl-content"><div class="tl-phase">Phase 3 — Tower 3</div><div class="tl-title">Kalyan's category-defining development</div><div class="tl-desc">Tower 3 sold out, establishing Destination One Kalyan firmly as the most prestigious residential address in Kalyan. National media recognition and industry awards.</div></div>
+      </div>
+      <div class="tl-item current reveal">
+        <div class="tl-dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="tl-content"><div class="tl-phase">Now — The Final Tower</div><div class="tl-title">#TheFinalTower — Last chance</div><div class="tl-desc">The most premium, most awaited launch in the project's history. The final tower is the culmination of everything Destination One Kalyan stands for — elevated in every way. This is your last opportunity.</div></div>
+      </div>
+    </div>
+  </section>
+  <div class="cta-strip">
+    <div class="cta-strip-text">
+      <div class="cta-strip-title">Be part of the legacy</div>
+      <div class="cta-strip-sub">Final tower — limited inventory — prior appointment compulsory</div>
+    </div>
+    <div class="cta-strip-actions">
+      <button class="btn-dark" onclick="navigate('contact')">Enquire Now</button>
+      <a href="tel:918446634066" class="btn-dark" style="background:transparent;border:1px solid rgba(255,255,255,0.2)">+91 8446634066</a>
+    </div>
+  </div>
+  <div class="rera-bar">
+    <span class="rera-text">RERA: <strong>P51700030210</strong> &nbsp;|&nbsp; MahaRERA: <strong>A51700021052</strong> &nbsp;|&nbsp; This website is operated by ASB Group, the authorized media & marketing partner of Ajmera Group. This is not the official developer website.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="eyebrow">Get in Touch</div>
+      <h1 class="page-title reveal">Contact <em>us</em></h1>
+      <p class="page-subtitle reveal reveal-delay-1">Located for all of life's needs and wants. Our team is ready to help with brochures, floor plans, cost sheets, payment plans, and site visit bookings.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="contact-layout">
+      <div>
+        <div class="eyebrow">Enquiry Form</div>
+        <h2 class="display-title reveal" style="font-size:32px;margin-bottom:28px">Send us an <em>enquiry</em></h2>
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile Number *</label>
+            <input type="tel" class="form-input" placeholder="+91 00000 00000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">I'm interested in</label>
+            <select class="form-input" style="background:#111;color:#ede9e0;cursor:pointer">
+              <option value="">Select configuration</option>
+              <option>1 BHK — from ₹42.9 Lakhs</option>
+              <option>2 BHK — from ₹68.9 Lakhs</option>
+              <option>Investment enquiry</option>
+              <option>NRI enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Any specific requirements or questions..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold">Send Enquiry</button>
+          <p class="form-disclaimer">By submitting this form, you agree to our Privacy Policy. Your information may be shared with third parties. Prices subject to change without notice.</p>
+        </form>
+        <div id="formSuccess" style="display:none;background:rgba(200,149,42,0.1);border:1px solid var(--gold-dim);padding:20px;margin-top:16px;border-radius:2px">
+          <p style="color:var(--gold);font-size:13px">✓ Thank you for your enquiry. Our team will contact you within 24 hours.</p>
+        </div>
+      </div>
+      <div class="contact-info-panel">
+        <div class="eyebrow">Reach Us</div>
+        <div class="contact-info-title">We're here to help</div>
+        <div class="ci-list">
+          <div class="ci-item reveal">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="ci-label">Site & Office Address</div>
+              <div class="ci-val">Murbad Road, Kalyan 421 301<br>Shahad, Ulhasnagar, Maharashtra<br><span style="color:var(--gold);font-size:11px">Prior appointment compulsory</span></div>
+            </div>
+          </div>
+          <div class="ci-item reveal">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg></div>
+            <div>
+              <div class="ci-label">Call / WhatsApp</div>
+              <div class="ci-val"><a href="tel:918446634066" style="color:var(--cream)">+91 8446634066</a></div>
+            </div>
+          </div>
+          <div class="ci-item reveal">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val"><a href="mailto:info@onekalyan.com" style="color:var(--cream)">info@onekalyan.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="map-embed" onclick="window.open('https://maps.google.com/?q=19.242964,73.149145','_blank')">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div class="map-embed-label">Murbad Road, Shahad, Kalyan</div>
+          <div class="map-coords" style="font-size:10.5px;color:var(--gold);font-family:monospace">19.242964°N · 73.149145°E</div>
+          <div style="font-size:11px;color:var(--faint);margin-top:4px">Click to open in Google Maps →</div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:20px">
+          <a href="tel:918446634066" class="btn-gold" style="flex:1;text-align:center;display:block;padding:14px">Call Now</a>
+          <a href="https://wa.me/918446634066/?text=Hello! I'm interested in Ajmera One Kalyan. Please contact me." target="_blank" class="btn-wa" style="flex:1;justify-content:center">
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#fff" stroke-width="1.8"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="rera-bar">
+    <span class="rera-text">RERA: <strong>P51700030210</strong> &nbsp;|&nbsp; MahaRERA Partner: <strong>A51700021052</strong> &nbsp;|&nbsp; Operated by ASB Group — authorized marketing partner. Not the official developer website.</span>
+    <span class="rera-text">Prices subject to change. Images for representation only. Properties subject to availability.</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">ONE<span>KALYAN</span></div>
+      <p class="footer-tagline">Destination One Kalyan — A landmark redefining the lifestyle of Kalyan and the entire MMR. Final tower now open for booking.</p>
+      <div class="footer-social">
+        <div class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+        <div class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+        <div class="social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a onclick="navigate('home')">Home</a>
+      <a onclick="navigate('amenities')">Amenities</a>
+      <a onclick="navigate('floorplans')">Floor Plans</a>
+      <a onclick="navigate('gallery')">Gallery</a>
+      <a onclick="navigate('about')">About</a>
+      <a onclick="navigate('contact')">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Project</h4>
+      <a onclick="navigate('contact')">Digital Brochure</a>
+      <a onclick="navigate('contact')">Payment Plan</a>
+      <a onclick="navigate('contact')">Cost Sheet</a>
+      <a onclick="navigate('contact')">Virtual Tour</a>
+      <a onclick="navigate('contact')">Sample Flat Video</a>
+      <a onclick="navigate('contact')">Master Plan</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a>Disclaimer</a>
+      <a>Privacy Policy</a>
+      <a>Terms of Use</a>
+      <a>RERA Certificate</a>
+      <h4 style="margin-top:20px">Contact</h4>
+      <a href="tel:918446634066">+91 8446634066</a>
+      <a href="mailto:info@onekalyan.com">info@onekalyan.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-rera">
+      RERA Reg. No.: <strong>P51700030210</strong> &nbsp;|&nbsp; MahaRERA Partner No.: <strong>A51700021052</strong><br>
+      Operated by ASB Group — authorized media & marketing partner of Ajmera Group.<br>
+      © 2026 One Kalyan. All rights reserved. Images for representation only. Prices subject to change.
+    </div>
+    <div class="footer-legal">
+      <a>Disclaimer</a>
+      <a>Privacy Policy</a>
+      <a>Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── NAVIGATION ─────────────────────────────────────────────
+function navigate(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const page = document.getElementById('page-' + pageId);
+  if (page) page.classList.add('active');
+  const navLink = document.querySelector('.nav-links a[data-page="' + pageId + '"]');
+  if (navLink) navLink.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(initReveal, 100);
+  return false;
+}
+
+// ── MOBILE MENU ────────────────────────────────────────────
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+// ── GALLERY FILTERS ────────────────────────────────────────
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// ── FAQ TOGGLE ─────────────────────────────────────────────
+function toggleFaq(questionEl) {
+  const item = questionEl.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ── SCROLL REVEAL ──────────────────────────────────────────
+function initReveal() {
+  const els = document.querySelectorAll('.page.active .reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => { el.classList.remove('visible'); io.observe(el); });
+}
+
+// ── SCROLL TO TOP ──────────────────────────────────────────
+const scrollTopBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) scrollTopBtn.classList.add('visible');
+  else scrollTopBtn.classList.remove('visible');
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 60) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+// ── COUNTER ANIMATION ──────────────────────────────────────
+function animateCounters() {
+  document.querySelectorAll('.stat-num[data-count]').forEach(el => {
+    const target = parseInt(el.getAttribute('data-count'));
+    const suffix = target >= 100 ? '+' : '';
+    let current = 0;
+    const step = Math.ceil(target / 60);
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current.toLocaleString('en-IN') + suffix;
+      if (current >= target) clearInterval(timer);
+    }, 25);
+  });
+}
+
+// ── FORM SUBMIT ────────────────────────────────────────────
+function handleFormSubmit(e) {
+  e.preventDefault();
+  document.getElementById('formSuccess').style.display = 'block';
+  e.target.style.display = 'none';
+}
+
+// ── INIT ───────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  initReveal();
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) { animateCounters(); statsObserver.disconnect(); }
+  }, { threshold: 0.5 });
+  const strip = document.querySelector('.stats-strip');
+  if (strip) statsObserver.observe(strip);
+});
+</script>
+</body>
+</html>
